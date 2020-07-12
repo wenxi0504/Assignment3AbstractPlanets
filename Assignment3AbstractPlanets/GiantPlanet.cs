@@ -7,7 +7,7 @@ namespace Assignment3AbstractPlanets
     class GiantPlanet:Planet
     { 
         // Private Instance Variables
-        private string m_type;
+        private string m_type="ice";
 
         public GiantPlanet(string name, double diameter, double mass, string type)
          :base(name,diameter,mass)
