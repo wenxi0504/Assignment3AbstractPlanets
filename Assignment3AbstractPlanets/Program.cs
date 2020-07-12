@@ -4,6 +4,12 @@ namespace Assignment3AbstractPlanets
 {
     class Program
     {
+        //--Author's name:Wen Xu
+        //--Author’s student number:301098127,
+        //--Date last Modified:11,July,2020,
+        //Program description:
+        //Revision History:
+
         static void Main(string[] args)
         {   // implement GiantPlanet class
             GiantPlanet giantPlant=new GiantPlanet("Jupiter", 139820,1.898E27, "giant");
