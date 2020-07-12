@@ -39,16 +39,7 @@ namespace Assignment3AbstractPlanets
 
      
 
-     interface IHasRings
-     {
-         public bool HasRings();
-     }
-
-     interface IHabitable
-     {
-         public bool Habitable();
-     }
-
+     
 
 
     }
