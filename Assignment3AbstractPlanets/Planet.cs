@@ -6,13 +6,13 @@ using System.Transactions;
 namespace Assignment3AbstractPlanets
 {   // class Planet is a superclass
     class Planet
-    { // Private Instance Variables
+    { // Private Instance Variables-fields
         private double m_diameter, m_mass, m_orbitalPeriod, m_rotationPeriod;
         private int m_moonCount, m_ringCount;
         private string m_name;
 
-        /*Public Properties: get:it create a parameter then returns to backing field
-        set: it creates a method with a parameter name value*/ 
+        /*Public Properties: get:read value of backing field and return the backing field.
+        set: to set a value to backing field */ 
         // readonly
         public double Diameter
         {
@@ -55,8 +55,9 @@ namespace Assignment3AbstractPlanets
             get { return m_rotationPeriod; }
             set { m_rotationPeriod = value; }
         }
-         
-        // Constructor:to initialize the objects
+
+        // Constructor:to initialize the planet object
+       // take name, diameter and mass as local variables and set the related instance variables
         public Planet (string name, double diameter, double mass)
         {
             m_name = name;
@@ -65,11 +66,11 @@ namespace Assignment3AbstractPlanets
 
         }
 
-        //This method is overridden so that the object values can be returned.
+        //This method is overridden so that the object's values can be returned.
         //Declare a ToString method and Implement the method so that it returns a string.
         public override string ToString()
         {
-            return $"{Name}\t{Diameter}\t,{Mass}";
+            return $"Name:{Name}\tDiamter:{Diameter}\tMass:{Mass}";
         }
 
 

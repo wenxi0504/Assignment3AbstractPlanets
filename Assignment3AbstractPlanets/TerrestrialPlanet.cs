@@ -6,18 +6,22 @@ using System.Text;
 
 namespace Assignment3AbstractPlanets
 {   // TerrestrialPlanet is a subclass of the Plant
-    class TerrestrialPlanet: Planet,IHasMoons,IHabitable
+    //TerrestrialPlanet class implements both IHasMoons and IHabitable interface
+    class TerrestrialPlanet : Planet,IHasMoons,IHabitable
     { // Private Instance Variable
         private bool m_oxygen;
 
-     // Constructor
-     public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen)
+        // Constructor:to initialize the terrestrial object
+        //take all the parameters of the Planet base class
+        //oxygen as a local variable and set the related instance variable
+        public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen)
          : base(name, diameter, mass)
      {
          m_oxygen = oxygen;
 
      }
-     public bool HasMoons()
+        // implement the interface IHasMoons member
+        public bool HasMoons()
      {
          if (MoonCount > 0)
          {
@@ -25,16 +29,10 @@ namespace Assignment3AbstractPlanets
          }
          return false;
      }
-
-     public bool Habitable()
-     {
-
-         if (m_oxygen = true)
-         {
-             return true;
-         }
-
-         return false;
+        // implement the interface IHabitable member
+        public bool Habitable()
+     { 
+         return m_oxygen;
      }
 
      

@@ -8,13 +8,13 @@ namespace Assignment3AbstractPlanets
         //--Author’s student number:301098127,
         //--Date last Modified:11,July,2020,
         //--Program description:1.0.0 version is to create four classes(Planet,GiantPlanet,TerrestrialPlanet,Program)
-        //and three interfaces(IHasMoons,IHasRings,Ihabitable).The output should display giantPlant's attributes(name,diameter and mass)
-        //as well as terrestrialPlant's attributes(name, diameter and mass)
+        //and three interfaces(IHasMoons,IHasRings,Ihabitable).The output should display giantPlanet's attributes
+        //(name,diameter and mass) as well as terrestrialPlanet's attributes(name, diameter and mass)
         //--Revision History:1.0.0
 
         static void Main(string[] args)
         {   // implement GiantPlanet class
-            GiantPlanet giantPlant=new GiantPlanet("Jupiter", 139820,1.898E27, "giant");
+            GiantPlanet giantPlant=new GiantPlanet("Jupiter", 139820,1.898E27, "ice");
             Console.WriteLine(giantPlant.ToString());
            
 
