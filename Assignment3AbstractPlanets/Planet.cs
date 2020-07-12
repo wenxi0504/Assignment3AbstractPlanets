@@ -17,13 +17,13 @@ namespace Assignment3AbstractPlanets
         public double Diameter
         {
             get { return m_diameter; }
-            set { }
+            
         }
         // readonly
         public double Mass
         {
             get { return m_mass; }
-            set { }
+            
         }
 
         public int MoonCount
@@ -35,7 +35,7 @@ namespace Assignment3AbstractPlanets
         public string Name
         {
             get { return m_name;}
-            set { }
+          
         }
 
         public double OrbitalPeriod

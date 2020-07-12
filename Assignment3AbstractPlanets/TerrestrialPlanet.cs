@@ -5,8 +5,8 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text;
 
 namespace Assignment3AbstractPlanets
-{
-    class TerrestrialPlanet: Planet
+{   // TerrestrialPlanet is a subclass of the Plant
+    class TerrestrialPlanet: Planet,IHasMoons,IHabitable
     { // Private Instance Variable
         private bool m_oxygen;
 
@@ -17,7 +17,7 @@ namespace Assignment3AbstractPlanets
          m_oxygen = oxygen;
 
      }
-     public bool HasMoons(int MoonCount)
+     public bool HasMoons()
      {
          if (MoonCount > 0)
          {
@@ -26,10 +26,10 @@ namespace Assignment3AbstractPlanets
          return false;
      }
 
-     public bool Habitable( bool oxygen)
+     public bool Habitable()
      {
 
-         if (oxygen =true)
+         if (m_oxygen = true)
          {
              return true;
          }

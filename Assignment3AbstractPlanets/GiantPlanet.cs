@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Assignment3AbstractPlanets
-{
-    class GiantPlanet:Planet
+{ // GiantPlant class implements both IHasMoons and IHasRings interface
+    class GiantPlanet:Planet,IHasMoons,IHasRings
+                     
     { 
         // Private Instance Variables
         private string m_type="ice";
@@ -16,23 +17,25 @@ namespace Assignment3AbstractPlanets
 
         }
 
-        public  bool HasMoons(int MoonCount)
+        public  bool HasMoons()
         {
-            if (MoonCount > 0)
+            if (MoonCount> 0)
             {
                 return true;
             }
             return false;
         }
 
-        public bool HasRings(int RingCount)
+        public bool HasRings()
         {
             if (RingCount > 0)
             {
                 return true;
             }
             return false;
-        } 
+        }
 
+
+       
     }
 }

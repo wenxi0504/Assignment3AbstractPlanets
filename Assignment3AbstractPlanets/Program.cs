@@ -13,11 +13,13 @@ namespace Assignment3AbstractPlanets
         static void Main(string[] args)
         {   // implement GiantPlanet class
             GiantPlanet giantPlant=new GiantPlanet("Jupiter", 139820,1.898E27, "giant");
-            giantPlant.ToString();
+            Console.WriteLine(giantPlant.ToString());
+           
 
             // Implement TerrestrialPlant class
             TerrestrialPlanet terrestrialPlanet=new TerrestrialPlanet("Mars", 6779, 6.39E23, false);
-            terrestrialPlanet.ToString();
+            Console.WriteLine(terrestrialPlanet.ToString());
+            
 
             // Implement method WaitForAnyKey
             static void WaitForAnyKey()
